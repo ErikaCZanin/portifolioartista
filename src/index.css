@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    background-color: rgb(255, 255, 193);
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.margem {
+    display: inline-block;
+    background-color: #A2A2A2;
+    width: 1440px;
+    height: 1800px;
+    text-align: center;
+}
+
+.containerBandas {
+    display: inline-block;
+    background-color: #999898;
+    width: 1216px;
+    height: 368px;
+    text-align: center;
+}
+
+.containerMusic {
+    display: inline-block;
+    width: 1216px;
+    height: 316px;
+    text-align: center;
+}
