@@ -13,19 +13,17 @@ body {
     width: 1440px;
     height: 1800px;
     text-align: center;
+    box-sizing: border-box;
 }
 
-.containerBandas {
+.pegprincipal {
     display: inline-block;
-    background-color: #999898;
+    background-color: #D9D9D9;
     width: 1216px;
-    height: 368px;
+    height: 1800px;
     text-align: center;
+    box-sizing: border-box;
 }
 
-.containerMusic {
-    display: inline-block;
-    width: 1216px;
-    height: 316px;
-    text-align: center;
-}
+
+
