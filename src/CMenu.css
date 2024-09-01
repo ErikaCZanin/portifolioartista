@@ -4,7 +4,6 @@
     background-color: #868686;
     width: 1216px;
     height: 100px;
-    text-align: center;
     box-sizing: border-box;
 }
 
@@ -15,16 +14,22 @@
     height: 100px;
     justify-content: flex-end; 
     align-items: center;
-    gap: 10px;
     box-sizing: border-box;
 }
 
-.opcoes {
-    background-color: orange;
-    width: 245px;
-    height: 39px;
-    text-align: center;
+
+.menuOpcoes ul {
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
     line-height: 5px;
     font-size: small;
-    box-sizing: border-box;
-}
+    margin: 32px;
+  }
+  
+.menuOpcoes li {
+    display: inline; 
+    margin-right: 24px;
+    color: rgb(255, 255, 255);
+  }

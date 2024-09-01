@@ -32,8 +32,6 @@
     display: flex;
     width: 33.33%;
     height: 100%;
-    flex-direction: column; 
-    font-size: 10px;
     box-sizing: border-box; 
     align-items: center;
     justify-content: center;
@@ -60,3 +58,15 @@
     align-items: center;
     justify-content: center;
 }
+
+
+.redeSocial ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.redeSocial li {
+    margin: 32px;
+    font-size: 24px;
+  }

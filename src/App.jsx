@@ -1,3 +1,4 @@
+import img from './assets/img.png';
 import './index.css'
 import './CBandas.css'
 import './CDatas.css'
@@ -5,6 +6,7 @@ import './CFinal.css'
 import './CIntro.css'
 import './CMenu.css'
 import './CMusicas.css'
+import { bandas } from './ListaBandas'
 
 function App() {
   return (
@@ -15,18 +17,12 @@ function App() {
                   {/* Opções do menu */}
           <div className='containerMenu'>
             <div className='menuOpcoes'>
-              <div className='opcoes'>
-                <h1>1</h1>
-              </div>
-              <div className='opcoes'>
-                <h1>2</h1>
-              </div>
-              <div className='opcoes'>
-                <h1>3</h1>
-              </div>
-              <div className='opcoes'>
-                <h1>4</h1>
-              </div>
+            <ul>
+              <li>Menu</li>
+              <li>Proximos shows</li>
+              <li>Biografia</li>
+              <li>Bandas</li>
+            </ul>
             </div>
           </div>
 
@@ -78,8 +74,16 @@ function App() {
                {/* Bandas */}
           <div className='containerBandas'>
           <div className='listaBandas'>
-            <h1>Bandas</h1>
+          {bandas.map((banda, index) => (
+              <div key={index} className='banda-item'>
+                <div>
+                <p className='banda-nome'>{banda.nome}</p>
+                <p className='banda-desc'>{banda.descricao}</p>
+                </div>
+              </div>
+            ))}
           </div>
+
           <div className='introLista'>
             <div className='tituloBanda'>
             <h1>Bandas</h1>
@@ -98,7 +102,6 @@ function App() {
           </div>
           </div>
  
-
 
               {/* Musicas */}
           <div className='containerMusic'>
@@ -129,13 +132,15 @@ function App() {
           <div className='containerFinal'>
             <div className='logo'>
               <div className='logofoto'>
-                <h1>Foto</h1>
+              <img src={img} className='lfoto' />
               </div>
             </div>
             <div className='redeSocial'>
-              <h1>Instagram</h1>
-              <h1>Facebook</h1>
-              <h1>Youtube</h1>
+              <ul>
+              <li>Instagram</li>
+              <li>Facebook</li>
+              <li>Youtube</li>
+              </ul>
             </div>
             <div className='Wpp'>
               <div className='wppBotao'>
