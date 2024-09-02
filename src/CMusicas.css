@@ -6,25 +6,42 @@
     height: 316px;
     box-sizing: border-box;
     text-align: center;
+    gap: 32px;
 }
 
 .listaMusic {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; 
+    flex-direction: column; 
     justify-content: center;
-    background-color: blue;
-    width: 200px;
-    height: 200px;
+    align-items: center; 
+    width: 240px;
+    height: 240px;
     box-sizing: border-box;
-    text-align: center;
-    margin: 32px;
-    border-radius: 32px;
+    text-align: center; 
+    color: white; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
     position: relative;
+    border-radius: 32px; 
+    border: 1px solid white;
+}
+
+.botao-imagem {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.botao-imagem img {
+    display: block;
+    width: 50px;
+    height: auto;
 }
 
 .musica {
-    margin: 0;
+    margin-bottom: 16px; 
 }
 
 .observacao {
@@ -35,3 +52,14 @@
 }
 
 
+.music-1 {
+    background-image: url('./assets/imgesm.png'); /* Caminho para a imagem da Música 1 */
+}
+
+.music-2 {
+    background-image: url('./assets/imgesm.png'); /* Caminho para a imagem da Música 2 */
+}
+
+.music-3 {
+    background-image: url('./assets/imgesm.png'); /* Caminho para a imagem da Música 3 */
+}

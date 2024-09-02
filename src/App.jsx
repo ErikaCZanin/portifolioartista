@@ -1,4 +1,6 @@
 import img from './assets/img.png';
+import iconplay from './assets/iconplay.png';
+import iconplaye from './assets/iconplaye.png';
 import './index.css'
 import './CBandas.css'
 import './CDatas.css'
@@ -64,9 +66,7 @@ function App() {
             </div>
             <div className='dtFotos'>
               <div className='fotosFundo'>
-                <div className='Foto'>
-                  <h1>Foto/Video</h1>
-                </div>
+                <div className='Foto'></div>
               </div>
             </div>
           </div>
@@ -75,7 +75,9 @@ function App() {
           <div className='containerBandas'>
           <div className='listaBandas'>
           {bandas.map((banda, index) => (
-              <div key={index} className='banda-item'>
+              <div key={index} className='banda-item'
+              style={{ backgroundImage: `url(${banda.foto})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+              >
                 <div>
                 <p className='banda-nome'>{banda.nome}</p>
                 <p className='banda-desc'>{banda.descricao}</p>
@@ -88,51 +90,59 @@ function App() {
             <div className='tituloBanda'>
             <h1>Bandas</h1>
             </div>
-            <div className='tituloIntro'>
-            <h1>Bandas</h1>
+            <div className='TextoIntro'>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum reprehenderit ipsum</p>
             </div>
             <div className='tituloBotão'>
-            <div className='bandaBotao'>
-            <h1>bot</h1>
-            </div>
-            <div className='bandaBotao'>
-            <h1>bot</h1>
-            </div>
+            <button id="imagemBotao" class="botao-imagem">
+        <img src={iconplaye} alt="Imagem do Botão" />
+    </button>
+    <button id="imagemBotao" class="botao-imagem">
+        <img src={iconplay} alt="Imagem do Botão" />
+    </button>
             </div>
           </div>
           </div>
  
 
               {/* Musicas */}
-          <div className='containerMusic'>
-            <div className='listaMusic'>
-              <h1 className='musica'>Botão</h1>
-              <div className='observacao'>
-                <h2>Observação</h2>
-                <h2>Observação</h2>
-              </div>
-            </div>
-            <div className='listaMusic'>
-              <h1 className='musica'>Botão</h1>
-              <div className='observacao'>
-                <h2>Observação</h2>
-                <h2>Observação</h2>
-              </div>
-            </div>
-            <div className='listaMusic'>
-              <h1 className='musica'>Botão</h1>
-              <div className='observacao'>
-                <h2>Observação</h2>
-                <h2>Observação</h2>
-              </div>
-            </div>
-          </div>
+<div className='containerMusic'>
+  <div className='listaMusic music-1'>
+  <button id="imagemBotao" class="botao-imagem">
+        <img src={iconplay} alt="Imagem do Botão" />
+    </button>
+    <div className='observacao'>
+      <h2>Observação</h2>
+      <h2>Observação</h2>
+    </div>
+  </div>
+  <div className='listaMusic music-2'>
+  <button id="imagemBotao" class="botao-imagem">
+        <img src={iconplay} alt="Imagem do Botão" />
+    </button>
+    <div className='observacao'>
+      <h2>Observação</h2>
+      <h2>Observação</h2>
+    </div>
+  </div>
+  <div className='listaMusic music-3'>
+  <button id="imagemBotao" class="botao-imagem">
+        <img src={iconplay} alt="Imagem do Botão" />
+    </button>
+    <div className='observacao'>
+      <h2>Observação</h2>
+      <h2>Observação</h2>
+    </div>
+  </div>
+</div>
+
+
 
            {/* redes sociais / Contatos */}
           <div className='containerFinal'>
             <div className='logo'>
               <div className='logofoto'>
-              <img src={img} className='lfoto' />
+              <img src={img} className='lfoto'/>
               </div>
             </div>
             <div className='redeSocial'>

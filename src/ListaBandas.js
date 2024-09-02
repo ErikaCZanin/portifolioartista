@@ -1,11 +1,14 @@
+
+import imgesg from './assets/imgesg.png';
+
 export const bandas = [
     {
-        foto: ' ',
+        foto: imgesg,
         nome: 'Banda 1',
         descricao: 'Descricao'
     },
     {
-        foto: ' ',
+        foto: imgesg,
         nome: 'Banda 2',
         descricao: 'Descricao2'
     }
